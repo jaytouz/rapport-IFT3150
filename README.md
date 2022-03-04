@@ -6,7 +6,7 @@ jeux de données pour construire une histoire. Toutefois, c’est la visualisati
 permet de rendre l’histoire accessible au public.
 
 Pour la réalisation du projet, il faudra :
-• Manipuler des données avec Python pour l’analyse des données (Numpy, pandas)
-• Manipuler des données avec Javascript pour la visualisation
-• Planifier le design de la visualisation de données
-• Implémenter la visualisation avec D3.js
+ - Manipuler des données avec Python pour l’analyse des données (Numpy, pandas)
+ - Manipuler des données avec Javascript pour la visualisation
+ - Planifier le design de la visualisation de données
+ - Implémenter la visualisation avec D3.js
