@@ -1,0 +1,3 @@
+[submodule "genderizerQc"]
+	path = genderizerQc
+	url = git@github.com:jaytouz/genderizeQc.git
