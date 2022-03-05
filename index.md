@@ -133,3 +133,94 @@ Cette dernière étape sera la création d'une ou plusieurs visualisations avec 
 > 3. Un croquis final de ce qui est attendu pour chaque graphique
 > 
 
+## C Plan de développement
+---
+
+> Date de début : 14 janvier
+> Date de fin prévu : fin avril
+
+B.1 à B.3 doivent être compléter pour début mars
+
+B.4 doit être compléter pour la mi-mars
+
+B.5 à B.6 doivent être complété pour le 15 avril
+
+Finalisation du rapport et de la présentation 15 avril à fin de session.
+
+## D Rapport d'avancement
+---
+
+### Semaine du 10 janvier au 28 janvier
+
+Les premières rencontres avec Thomas Hurtut et l'équipe du Devoir ont permis d'établir le choix du sujet et la source des données à analyser. Une fois la source des données choisie, le plan de développement a pu être établi. Initialement, on croyait que le CSV du site du gouvernement permettait d'avoir toutes les informations. Toutefois, on a constaté que le code postal et la ville n'étaient pas inclus. 
+
+C'est à ce moment que le choix a été pris de développer un scrapper afin d'extraire automatiquement les données. J'ai discuté avec Thomas et les développeurs de l'équipe du Devoir pour connaître les spécifications. 
+
+    Scrapper rapide, réutilisable et paramétrable
+
+Le choix de Selenium a également été confirmé.
+
+ > ***Sommaire du 10 janvie au 28 janvier***
+ > 1. La source des données sera [Élection Québec](https://www.electionsquebec.qc.ca/francais/provincial/financement-et-depenses-electorales/recherche-sur-les-donateurs.php)
+ > 2. La première chose a développer sera un scrapper
+
+
+### Semaine 31 janvier au 18 février
+
+Très rapidement j'ai eu une solution qui utilisait uniquement Selenium. L'utilisateur rentre dans le code les paramètres de recherche qui sont les mêmes que le site d'élection Québec. Ensuite, le robot parcours toutes les pages et enregistres les données en CSV.
+
+    Problème : la solution actuelle prend 3h50 et ralenti l'ordinateur durant le traitement.
+
+Pour répondre à ce problème, quelques solutions ont été proposées:
+
+1. Utiliser l'option *headless* qui fait en sorte qu'aucune fenêtre chrome s'ouvre.
+2. Utiliser *beautifoulSoup4* et Selenium plutôt que seulement Selenium. 
+3. Paralléliser le code
+
+À ce moment, le code a du être adapté afin séparer le chargement des données et la lecture des données. Le chargement des données peut uniquement se faire avec Selenium, cette logique est encapsulée dans le module scrapper. La subtilité a été d'extraire toute la page dans une chaîne de charactère qui représente le code HTML de la page avec les données pertinentes. À partir de cette structure de donnée, il est possible d'utilisé *beautifulsoup4* qui est beaucoup plus rapide que Selenium pour naviguer le DOM.
+
+À ce moment, le projet comporte deux packages et fonctionne avec un seul processus : 
+
+- Scrapper : abstraction de la page avec Selenium
+- Parser : Utilisation de *beautifoulsoup4* pour extraire les données
+
+L'étape suivante est d'implémenté la parralélisation. Considérant que Google Chrome fonctionne avec un processus différent pour chaque page, l'idée a été de créer un processus pour chaque année dans la requête. 
+
+Par exemple, pour la requête suivante : 
+
+    Années : 2017, 2018, 2019, 2020, 2021, 2022
+    Entité Pol : PCQ, PLQ, PQ, QS
+
+Le programme crérait 6 processus différents avec les paramètres suivants : 
+
+    P1
+    Année : 2017
+    Entité Pol : PCQ, PLQ, PQ, QS
+
+    P2
+    Année : 2018
+    Entité Pol : PCQ, PLQ, PQ, QS
+
+    ...
+
+    P6
+    Annéee : 2022
+    Entité Pol : PCQ, PLQ, PQ, QS
+
+Par la suite, le programme pourrait simplement combiner la sortie des différents processus en un seul jeu de données. Cette logique est défini dans le package *Runner*. 
+
+
+ > ***Sommaire du 31 janvier au 18 février***
+ > 1. [Dons-Scrapper](https://github.com/jaytouz/dons-scrapper/tree/83ce4cbe34858a6a78cddb11dbaa9702b3caae04)
+ >     -  Version fonctionnelle
+ >     -  Temps d'exécution passer de 3h50 en simple thread à 50 minutes en mode headless avec *beautifulsoup4*.
+ >     - Version multiprocess implémenter, mais avec des problèmes à régler
+ >     - Trois packages : Scrapper, Parser, Runner
+
+
+### Semaine 21 février au 4 mars
+
+
+
+
+
