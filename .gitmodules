@@ -1,3 +1,6 @@
 [submodule "genderizerQc"]
 	path = genderizerQc
 	url = git@github.com:jaytouz/genderizeQc.git
+[submodule "donScrapper"]
+	path = donScrapper
+	url = git@github.com:jaytouz/dons-scrapper.git
