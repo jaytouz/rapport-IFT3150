@@ -220,6 +220,8 @@ Par la suite, le programme pourrait simplement combiner la sortie des différent
 
 ### Semaine 21 février au 4 mars
 
+Tout d'abord, le multiprocessing a été abandonné car le problème n'était pas réglable aisément et il ne s'agit pas de l'objectif principal de ce projet.
+
 L'objectif a été de préparer le terrain pour l'analyse de données. J'ai donc, fait une première collecte de données et créer quelques fonctions pour nettoyer les données.
 
 En même temps, j'ai fait quelques recherches pour voir s'il existait de la littérature abordant les dons au Québec. Ces recherches furent peu fructueuse, par contre, j'ai réalisé qu'un groupe de l'UdeM a fait du travail de recherche sur les dons au Fédéral. J'ai donc chercher à rencontrer un expert du département de science politique pour m'assurer de ne rien manquer dans l'analyse.
