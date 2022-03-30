@@ -220,7 +220,56 @@ Par la suite, le programme pourrait simplement combiner la sortie des différent
 
 ### Semaine 21 février au 4 mars
 
+L'objectif a été de préparer le terrain pour l'analyse de données. J'ai donc, fait une première collecte de données et créer quelques fonctions pour nettoyer les données.
+
+En même temps, j'ai fait quelques recherches pour voir s'il existait de la littérature abordant les dons au Québec. Ces recherches furent peu fructueuse, par contre, j'ai réalisé qu'un groupe de l'UdeM a fait du travail de recherche sur les dons au Fédéral. J'ai donc chercher à rencontrer un expert du département de science politique pour m'assurer de ne rien manquer dans l'analyse.
+
+La conclusion de cette rencontre a été que l'exploration des donateurs du PCQ, du genre des donateurs et de l'impact des lois sur les dons seraient trois sujets très intéressant.
+
+Peu importe le sujet, la question du genre sembblait très intéressante. Ainsi, j'ai développé un prédicteur de genre à partir du prénom en utilisant un base de données des dons du Québec ainsi qu'un API (genderize.io). Une heuristique a permis d'ajouter le genre aux données. L'outil pour les noms du Québec est disponible sur PyPi et fonctionne bien pour des noms de personne née entre 1980 et 2020.
+
+ > ***Sommaire du 21 février au 4 mars***
+ > 1. [GenderizerQc](https://github.com/jaytouz/genderizeQc)
+ > 2. Entrevue avec Jean-François Godbout
+ > 3. Préparation et exploration des données
+
+### Semaine 6 mars au 18 mars
+
+L'analyse c'est fait en plusieurs phases : 
+
+- Nettoyage des données
+- Exploration des données
+- Réponse par question avec des visualisations
+
+Le nettoyage a consisté à s'assurer qu'il n'y avait pas de valeurs manquantes. En même temps, j'en ai profité pour explorer les distributions de chaque attributs afin de m'assurer qu'il n'y avait pas de valeurs anormales.
+
+Finalement, avec l'équipe du Devoir, j'ai formulé quelques questions afin de guider l'analyse et y répondre. 
+
+    1- Qui sont les donateurs du PCQ? Donnaient-ils pour d'autres partis avant ou s'agit-il de nouveaux donateurs?
+    2- D'où viennent les donateurs du PCQ?
+    3- Comment se comparent le financement par dons du PCQ par rapport aux autres principaux partis?
+
+Ces analyses ont été faites et présenter à l'équipe du Devoir afin d'obtenir des rétroactions avant de débuter la phase de design des visualisations.
 
 
+ > ***Sommaire du 6 mars au 18 mars***
+ > 1. Début de l'analyse des données du PCQ
+ > 2. Définition des questions
+ > 3. Analyse des donnée du PCQ
+ > 4. Présentation à l'équipe du Devoir
 
+
+### Semaine 20 mars au 1 avril
+
+À partir du 20 mars, j'ai été pairé avec une journaliste afin qu'elle s'occupe des interviews et du texte qui accompagnerait l'analyse et les visualisations de ce projet.
+
+Côté design, j'ai présenté des choix de visualisation qui pourrait se présenter dans l'article. Ces choix ont été discuter en détails avec Thomas afin que le design soit compréhensif pour un lecteur typique du Devoir et qu'ils répondent à l'objectif de la visualisation. 
+
+Ces discussions ont également mener à une amélioration de la méthodologie. En effet, la façon de quantifié un nouveau donateur n'était pas exact et a dû être amélioré.
+
+
+ > ***Sommaire du 20 mars au 1 avril***
+ > 1. Amélioration de la méthodologie pour trouver les nouveaux donateurs
+ > 2. Premier croquis des visualisations
+ > 3. Début des échanges sur le design
 
