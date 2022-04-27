@@ -222,7 +222,7 @@ Par la suite, le programme pourrait simplement combiner la sortie des différent
 
 Tout d'abord, le multiprocessing a été abandonné car le problème n'était pas réglable aisément et il ne s'agit pas de l'objectif principal de ce projet.
 
-L'objectif a été de préparer le terrain pour l'analyse de données. J'ai donc, fait une première collecte de données et créer quelques fonctions pour nettoyer les données.
+L'objectif des deux semaines a été de préparer le terrain pour l'analyse de données. J'ai donc, fait une première collecte de données et créer quelques fonctions pour nettoyer les données.
 
 En même temps, j'ai fait quelques recherches pour voir s'il existait de la littérature abordant les dons au Québec. Ces recherches furent peu fructueuse, par contre, j'ai réalisé qu'un groupe de l'UdeM a fait du travail de recherche sur les dons au Fédéral. J'ai donc chercher à rencontrer un expert du département de science politique pour m'assurer de ne rien manquer dans l'analyse.
 
@@ -261,17 +261,20 @@ Ces analyses ont été faites et présenter à l'équipe du Devoir afin d'obteni
  > 4. Présentation à l'équipe du Devoir
 
 
-### Semaine 20 mars au 1 avril
+### Semaine 4 avril au 29 avril
 
-À partir du 20 mars, j'ai été pairé avec une journaliste afin qu'elle s'occupe des interviews et du texte qui accompagnerait l'analyse et les visualisations de ce projet.
+Le mois d'avril a été dédié à la programmation D3. J'ai d'abord fait une première version des visualisations en format statique. Dans un deuxième temps, j'ai développer les transtions entre les différents états des visualisations. Enfin, le reste du développement a été consacré au style du site web.
 
-Côté design, j'ai présenté des choix de visualisation qui pourrait se présenter dans l'article. Ces choix ont été discuter en détails avec Thomas afin que le design soit compréhensif pour un lecteur typique du Devoir et qu'ils répondent à l'objectif de la visualisation. 
+Des modifications ont été apporté pour facilité la compréhension des graphiques. Par exemple, certain graphiques ne seraient pas bien paru en format mobile, donc une simplification du design a été apporté pour en réduire la taille à l'écran.
 
-Ces discussions ont également mener à une amélioration de la méthodologie. En effet, la façon de quantifié un nouveau donateur n'était pas exact et a dû être amélioré.
+La dernière semaine a été dédiée au dernière modification suggérée par Thomas et l'équipe du Devoir. Sandrine Vieira et Cedric Gagnon du Devoir se sont occupés de la rédaction du texte et de l'ajout de photo pour accompagner les visualisations.
 
 
- > ***Sommaire du 20 mars au 1 avril***
- > 1. Amélioration de la méthodologie pour trouver les nouveaux donateurs
- > 2. Premier croquis des visualisations
- > 3. Début des échanges sur le design
+ > ***Sommaire du 4 avril au 29 avril***
+ > 1. Version statique des visualisations
+ > 2. Version dynamique avec transition
+ > 3. Amélioration du design
+ > 4. Article complété et prêt pour publication la semaine suivante
+
+
 
