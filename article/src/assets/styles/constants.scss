@@ -1,0 +1,79 @@
+// ***** Colors *****
+$black: #000;
+$blue: #4370ff;
+$dark-blue: #1b295e;
+$very-dark-blue: #1f1f33;
+$light-gray: #d0d0d0;
+$very-light-gray: #eeeded;
+$very-very-light-gray: #f2f2f2;
+$dark-gray: #101010;
+$white: #fff;
+$purple-background: #d3c6d7;
+
+$semi-transparent-white: rgba($white, 0.8);
+
+// ***** Dimensions *****
+$small-screen: 576px;
+$medium-screen: 768px;
+$large-screen: 992px;
+$extra-large-screen: 1200px;
+
+// ***** Fonts *****
+$serif-font-family: 'publico', serif;
+$sans-serif-font-family: 'graphik', sans-serif;
+$lyon-font-family: 'lyondisplay', serif;
+$bruneldeck-font-family: 'bruneldeck', serif;
+$bruneldeckbold-font-family: 'bruneldeckbold', serif;
+
+// ***** General *****
+$text-color: #222;
+$text-light-color: #666;
+$text-very-light-color: #868686;
+
+$text-max-width: 700px;
+$small-screen-base-font-size: 10pt;
+
+$fig-caption-font-size: 0.9em;
+$fig-image-width: 125%;
+$fig-mobile-image-width: 100%;
+
+// ***** Header *****
+$header-height: 40px;
+$header-logo-height: 22px;
+$header-background-color: $very-light-gray;
+$header-dark-background-color: $very-dark-blue;
+$header-padding-top-bottom: 9px;
+$header-padding: $header-padding-top-bottom 25px;
+$header-dark-text-color: #ddd;
+$header-scroll-progress-color: #c3cfd5;
+$header-dark-scroll-progress-color: #849daa;
+
+// ***** Main *****
+$main-padding-left-right: 25px;
+$main-padding: 0 $main-padding-left-right;
+
+$intro-h1-size: 3.2em;
+$intro-mobile-h1-size: 2.6em;
+$intro-small-screen-h1-size: 2.4em;
+$intro-text-size: 1.1em;
+$intro-margin-top: 175px;
+$intro-mobile-margin-top: 125px;
+$intro-small-screen-margin-top: 100px;
+$intro-spacing: 3.5em;
+
+$step-max-width: 400px;
+$step-text-color: #616163;
+$step-heading-font-size: 1.2em;
+$step-font-size: 1.05em;
+$step-padding: 10px 30px;
+$step-background-color: $semi-transparent-white;
+$step-border-color: $light-gray;
+
+$vis-width: 58%;
+$vis-height: calc(100vh - #{$header-height});
+
+// ***** Footer *****
+$footer-max-width: $text-max-width;
+$footer-padding: 0 25px;
+$footer-inner-padding: 25px 0 50px;
+$footer-background-color: $white;

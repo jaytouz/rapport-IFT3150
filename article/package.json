@@ -1,0 +1,63 @@
+{
+  "name": "scrollytelling-template",
+  "version": "2.0.0",
+  "description": "Le Devoir's scrollytelling template",
+  "main": "./dist/bundle.js",
+  "directories": {
+    "src/assets/lib": "src/assets/lib"
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "lint": "eslint src/** && npm run sass-lint",
+    "start": "webpack-dev-server --mode development",
+    "sass-lint": "sass-lint -c sass-lint.yml -v -q",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeDevoir/scrollytelling_template.git"
+  },
+  "keywords": [
+    "scrollytelling",
+    "data-visualization"
+  ],
+  "author": "Antoine Beland and Jean Philippe Corbeil",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LeDevoir/scrollytelling_template/issues"
+  },
+  "homepage": "https://github.com/LeDevoir/scrollytelling_template#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "d3": "^7.3.0",
+    "normalize.css": "^8.0.1",
+    "npm-check-updates": "^12.1.0",
+    "stickybits": "^3.7.9",
+    "topojson-client": "^3.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.8",
+    "@babel/register": "^7.16.9",
+    "@babel/runtime": "^7.16.7",
+    "babel-loader": "^8.2.3",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^10.2.0",
+    "core-js": "^3.20.3",
+    "css-loader": "^6.5.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.5.2",
+    "node-sass": "^7.0.1",
+    "path": "^0.12.7",
+    "sass-lint": "^1.13.1",
+    "sass-loader": "^12.4.0",
+    "style-loader": "^3.3.1",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.66.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.3",
+    "webpack-log": "^3.0.2"
+  }
+}

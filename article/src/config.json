@@ -1,0 +1,21 @@
+{
+  "title": "Les nouveaux partisans du Parti conservateur du Québec",
+  "authors": [
+    {
+      "name": "Sandrine Vieira",
+      "url": "https://www.ledevoir.com/auteur/sandrine-vieira",
+      "role": "ROLE_DESCRIPTION"
+    },
+    {
+      "name": "Jérémie Tousignant",
+      "url": "https://www.ledevoir.com/auteur/AUTEUR_2_URL",
+      "role": "ROLE_DESCRIPTION"
+    }
+  ],
+  "date": "3 mai 2022",
+  "update": "",
+  "url": "https://www.ledevoir.com/documents/special/ICI",
+  "description": "Mettre la description du site web ici.",
+  "image": "https://www.ledevoir.com/documents/special/URL_IMG_ICI",
+  "keywords": ["key1", "key2", "..."]
+}
